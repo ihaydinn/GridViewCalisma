@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MyDialog">
+
+    <ImageView
+        android:layout_width="550px"
+        android:layout_height="275px"
+        app:srcCompat="@drawable/ulke1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iVDialogBayrakResmi" />
+
+    <TextView
+        android:text="Ülke 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iVDialogBayrakResmi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tvDialogUlkeAdi" />
+
+    <Button
+        android:text="KAPAT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDialogUlkeAdi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:onClick="kapat"
+        android:id="@+id/btnDialogKapat" />
+</RelativeLayout>
